@@ -7,7 +7,14 @@
 */
 
 function isPalindrome(str) {
+  var str1 = "";
+  for(i=0;i<str.length;i++){
+    if(str[i]!==str[str.length-1-i]){
+      return false;
+    }
+  }
   return true;
 }
 
+console.log(isPalindrome("aracecara"));
 module.exports = isPalindrome;
